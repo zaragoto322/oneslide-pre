@@ -15,7 +15,7 @@ function convert(raw) {
         html += `
 <section data-markdown>
 <textarea data-template>
-${arr[i]}
+${arr[i].replace(/^#+(?!#)/,'').trim()}
 </textarea>
 </section>
 `
@@ -24,7 +24,7 @@ ${arr[i]}
 <section>
 <section data-markdown>
 <textarea data-template>
-${arr[i]}
+${arr[i].replace(/^#+(?!#)/,'').trim()}
 </textarea>
 </section>
 `
@@ -32,7 +32,7 @@ ${arr[i]}
         html += `
 <section data-markdown>
 <textarea data-template>
-${arr[i]}
+${arr[i].replace(/^#+(?!#)/,'').trim()}
 </textarea>
 </section>
 `
@@ -40,7 +40,7 @@ ${arr[i]}
         html += `
 <section data-markdown>
 <textarea data-template>
-${arr[i]}
+${arr[i].replace(/^#+(?!#)/,'').trim() }
 </textarea>
 </section>
 </section>
@@ -52,7 +52,7 @@ ${arr[i]}
         html += `
 <section data-markdown>
 <textarea data-template>
-${arr[i]}
+${arr[i].replace(/^#+(?!#)/,'').trim()}
 </textarea>
 </section>
 `        
@@ -60,7 +60,7 @@ ${arr[i]}
         html += `
 <section data-markdown>
 <textarea data-template>
-${arr[i]}
+${arr[i].replace(/^#+(?!#)/,'').trim()}
 </textarea>
 </section>
 </section>
