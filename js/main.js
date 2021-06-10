@@ -81,7 +81,12 @@ const Editor = {
     console.log('editor init')
     this.$editInput = $('.editor textarea')
     this.$saveBtn = $('.editor .button-save')
-    this.markdown = localStorage.markdown || '#oneslide11'
+    this.markdown = localStorage.markdown || `#oneslide
+    ##1
+    ##2
+    ##3
+    ###4
+    ###5`
     this.$slideContainer = $('.slides')
 
     this.bind()
