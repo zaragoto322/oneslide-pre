@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+.control {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.control .iconfont {
+    font-size: 40px;
+    color: #fff;
+    margin: 16px;
+    display:block;
+    cursor: pointer;
+
+}
+
+.menu {
+    height:100vh;
+    background:#252f2d;
+    color: #fff;
+    width: 180px;
+    position: fixed; 
+    z-index: 100;
+    transform: translate(-100%);
+    transition: all .3s;
+}
+
+.menu.open {
+    transform: translate(0);
+}
+
+
+
+.menu .icon-close {
+height: 20px;
+position: absolute;
+right: 10px;
+top: 10px;
+padding: 5px;
+cursor: pointer;
+color: grey;
+transition: all .3s;
+}
+
+.menu .icon-close:hover {
+    color: #fff;
+}
+
+.menu .detail {
+margin-top: 50px;
+}
+
+
+.detail .tab {
+    margin: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+    color: grey;
+}
+
+.detail .tab.active {
+    color:#fff;
+}
+
+.menu .detail .iconfont {
+    margin-right: 6px;
+}
+
+.menu .detail .content {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: calc(100vw - 180px);
+    height: 100vh;
+    padding-bottom: 20px;
+    background-color: #212a29;
+    overflow: scroll;
+    font-size: 14px;
+    transform: translate(calc(100% + 180px));
+    transition: transform .3s;
+}
+
+.menu.open .detail .content.active {
+    transform: translate(0);
+}
+
+.menu .detail .content .header {
+    font-size: 40px;
+    padding: 20px;
+    border-bottom: 2px solid #425351;
+}
+
+.menu .detail .content .body {
+    padding: 20px;
+}
+
+.menu .detail .content textarea {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    background-color: #425351;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.menu .detail .content .button-save {
+    background-color: #48484e;
+    padding: 6px 8px;
+    color: #d9dfdf;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    opacity: .7;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.menu .detail .content .button-save:hover {
+    opacity: 1;
+}
+
+.menu .themes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu .theme h5 {
+    margin-top: 30px;
+}
+
+.menu .themes figure {
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0.7;
+    border: 4px solid transparent;
+}
+
+.menu .themes figure.select {
+    opacity: 1;
+    border-color: #fff;
+}
+
+.menu .themes figure img {
+    width: 200px;
+    height: 150px;
+}
+
+.menu .themes figcaption {
+    padding: 10px;
+}
+
+.menu .theme .transition {
+    margin-top: 20px;
+}
+
+.menu .theme .selector {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.reveal.left-top section {
+    text-align: left;
+}
+
+.reveal.left-top .slides > section:first-child {
+    text-align: center;
+    transform: translate(0, 50%);
+}
+
+.menu .theme .transition,
+.menu .theme .align {
+    margin-top: 20px;
+}
+
+
